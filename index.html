@@ -13,9 +13,11 @@
     <script src="js/w3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        footer {
+        #navSmall {
             position: sticky;
             bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -58,7 +60,7 @@
                     style="animation-iteration-count: infinite; animation-duration: 10s; animation-delay: 2s; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                     <span class="w3-hide-small w3-hide-medium"><b>I'm</b></span> <b>Joshua Osho</b>
                 </h1>
-                <p class="w3-hide-small w3-hide-medium w3-animate-top"
+                <p class="w3-hide-small w3-animate-top"
                     style="animation-iteration-count: infinite; animation-duration: 10s; animation-delay: 4s;">Creative
                     Frontend Web Developer/Designer</p>
                 <div class="w3-bar w3-padding-small w3-hide-small w3-hide-medium">
@@ -72,7 +74,9 @@
             </div>
             <div class="w3-half w3-mobile" style="width: 40%; padding-top: 2%;">
                 <img src="images/me.png" class="w3-image w3-round-xxlarge" width="75%">
-                <p class="w3-hide-large">Creative Frontend Web Developer/Designer</p>
+                <p class="w3-hide-large w3-hide-medium w3-animate-opacity"
+                    style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 4s;">Creative
+                    Frontend Web Developer/Designer</p>
             </div>
         </div>
     </header>
@@ -83,6 +87,7 @@
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <b>Joshua Osho</b>
             </h2>
+            <hr style="width: 20%; height: 1px;" color="black">
             <div class="w3-container w3-text-black">
                 <p class="w3-padding-small">
                     Motivated student of Computer Science seeking hands-on experience in frontend
@@ -108,8 +113,9 @@
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <b><span class="w3-hide-small w3-hide-medium">Technical</span> Skills</b>
             </h2>
+            <hr style="width: 20%; height: 1px;" color="black">
             <!-- Technical Skills section for large screens (Hidden on small and medium screens) -->
-            <div class="w3-row w3-text-black w3-hide-medium w3-hide-small w3-border">
+            <div class="w3-row w3-text-black w3-hide-medium w3-hide-small w3-card-4">
                 <div class="w3-mobile w3-third">
                     <ul>
                         <li class="w3-wide w3-ul w3-padding-small"
@@ -202,15 +208,35 @@
                     <ul class="w3-padding-small w3-animate-zoom"
                         style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-fill-mode: backwards;">
                         <li class="w3-wide w3-ul w3-padding-small">
-                            HTML 5</li>
+                            Project Management</li>
                         <li class="w3-wide w3-ul w3-padding-small">
-                            CSS 3</li>
+                            Web Maintenance</li>
                         <li class="w3-wide w3-ul w3-padding-small">
-                            JavaScript</li>
+                            Problem Resolution</li>
                         <li class="w3-wide w3-ul w3-padding-small">
-                            Bootstrap</li>
+                            Employee Training</li>
                         <li class="w3-wide w3-ul w3-padding-small">
-                            RWD</li>
+                            Teamwork & Collaboration</li>
+                    </ul>
+                </div>
+                <div class="skills w3-container w3-center w3-text-black w3-card-4"
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <h6 class="w3-padding w3-animate-opacity"
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-fill-mode: backwards;">
+                        <b>Plus</b>
+                    </h6>
+                    <ul class="w3-padding-small w3-animate-zoom"
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-fill-mode: backwards;">
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            Creativity</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            WordPress</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            Google Docs</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                        </li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            Graphics Design</li>
                     </ul>
                 </div>
             </div>
@@ -219,8 +245,8 @@
             </script>
         </div><!-- End About Section -->
         <!-- Portfolio -->
-        <div style="width: 80%; margin-left: auto; margin-right: auto;">
-            <h4 class="w3-xlarge w3-text-black"><b
+        <div style="width: 80%; margin-left: auto; margin-right: auto;" class="w3-text-black">
+            <h4 class="w3-xlarge"><b
                     style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Portfolio</b></h4>
             <hr class="w3-gray" style="height: 4px; margin: auto;"><br>
             <div class="projects w3-center"
@@ -261,11 +287,11 @@
         <br><br>
         <br class="w3-hide-large"><br class="w3-hide-large">
         <!-- Contact Section -->
-        <h2 class="w3-text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             <b>Contact Me/Send a message</b>
         </h2>
-        <hr style="width:20%" class="w3-white">
-        <div class="w3-container  w3-padding-large w3-row" id="contact"
+        <hr style="width: 20%; height: 1px;" color="black">
+        <div class="w3-container w3-black w3-text-white w3-padding-large w3-row" id="contact"
             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100%; margin-left: auto; margin-right: auto;">
             <div class="w3-bar  w3-xlarge">
                 <a class="w3-btn w3-bar-item" href="tel: +234 904-978-8099"><i
@@ -274,7 +300,7 @@
                     href="mailto:tlkjorsh@icloud.com?subject=Get In Touch&body=Please enter your message"><i
                         class="fa fa-envelope w3-text-white w3-xlarge w3-margin-right"></i>tlkjorsh@icloud.com</a>
             </div>
-            <hr style="width:100%; height: 1px;" class="w3-white">
+            <hr style="width:100%; height: 1px;" color="white">
             <div class="w3-bar w3-animate-opacity"
                 style="animation-iteration-count: infinite; animation-duration: 10s; animation-delay: 4s;">
                 <a class="w3-btn" href="https://github.com/themanOsho"><i
@@ -290,14 +316,13 @@
             </div>
             <hr style="width:100%; height: 1px;" class="w3-white">
             <div class="">
-                <h5 class="w3-large w3-padding-small"
-                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                    <b>&copy 2022 - Twebworks</b>
-                </h5>
+
             </div>
         </div><!-- End Contact Section -->
     </div><!-- Closing DIV for Page Content -->
-    <footer class=" w3-white w3-hide-large w3-bar w3-card-4 w3-large w3-hover-white w3-text-black w3-round-xxlarge">
+    <div id="navSmall"
+        class=" w3-white w3-hide-large w3-bar w3-card-4 w3-large w3-hover-white w3-text-black w3-round-xxlarge"
+        style="width: 80%;">
         <!-- Navbar on small & medium screens (Hidden on large screens) -->
         <a href="#home" class="w3-bar-item w3-button w3-hover-none" style="width:33.3% !important"><i
                 class="fa fa-home"></i></a>
@@ -305,11 +330,16 @@
                 class="fa fa-user"></i></a>
         <a href="#contact" class="w3-bar-item w3-button w3-hover-none" style="width:33.3% !important"><i
                 class="fa fa-envelope"></i></a>
+    </div><br>
+    <footer class="w3-container w3-black w3-small">
+        <h5 class="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <b>&copy 2022 - Twebworks.</b> All Rights Reserved.
+        </h5>
     </footer>
-</body>
-<!-- link for acronym  https://wordman.com/acronym-generator Software Development & Design
+    <!-- link for acronym  https://wordman.com/acronym-generator Software Development & Design
     Name Mixer lik https://namemixers.com/
     Templates https://themeforest.net/category/site-templates
 -->
+</body>
 
 </html>
