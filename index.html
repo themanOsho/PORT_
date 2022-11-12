@@ -83,7 +83,7 @@
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <b>Joshua Osho</b>
             </h2>
-            <div class="w3-container w3-text-black w3-card-4 w3-round-xlarge">
+            <div class="w3-container w3-text-black">
                 <p class="w3-padding-small">
                     Motivated student of Computer Science seeking hands-on experience in frontend
                     web development. A friendly and outgoing personality with a strong desire
@@ -106,7 +106,7 @@
                 class="w3-btn w3-right w3-text-black w3-card-4 w3-round-xlarge">Read More/Less</button><br><br
                 class="w3-hide-large">
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                <b>Technical Skills</b>
+                <b><span class="w3-hide-small w3-hide-medium">Technical</span> Skills</b>
             </h2>
             <!-- Technical Skills section for large screens (Hidden on small and medium screens) -->
             <div class="w3-row w3-text-black w3-hide-medium w3-hide-small w3-border">
@@ -173,29 +173,50 @@
             </div>
             <!-- Technical Skills section for Small and Medium screens (Hidden on large screens) -->
             <div class="w3-hide-large">
-                <div class="skills w3-center w3-text-black w3-card-4">
+                <div class="skills w3-container w3-center w3-text-black w3-card-4"
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                     <h6 class="w3-padding w3-animate-opacity"
-                        style="animation-iteration-count: 4; animation-delay: 2s; animation-duration: 10s; animation-direction: alternate-reverse;">
-                        <b>Front-End Skills</b></h6>
-                    <ul class="w3-padding-small">
-                        <li class="w3-wide w3-ul w3-padding-small"
-                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-direction: alternate-reverse;">
+                        <b>Front-End Skills</b>
+                    </h6>
+                    <ul class="w3-padding-small w3-animate-zoom"
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-direction: alternate-reverse;">
+                        <li class="w3-wide w3-ul w3-padding-small">
                             HTML 5</li>
-                        <li class="w3-wide w3-ul w3-padding-small"
-                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <li class="w3-wide w3-ul w3-padding-small">
                             CSS 3</li>
-                        <li class="w3-wide w3-ul w3-padding-small"
-                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <li class="w3-wide w3-ul w3-padding-small">
                             JavaScript</li>
-                        <li class="w3-wide w3-ul w3-padding-small"
-                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <li class="w3-wide w3-ul w3-padding-small">
                             Bootstrap</li>
-                        <li class="w3-wide w3-ul w3-padding-small"
-                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                            Responsive Web Design</li>
-                    </ul><br>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            RWD</li>
+                    </ul>
+                </div>
+                <div class="skills w3-container w3-center w3-text-black w3-card-4"
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <h6 class="w3-padding w3-animate-opacity"
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-fill-mode: backwards;">
+                        <b>Technical Skills</b>
+                    </h6>
+                    <ul class="w3-padding-small w3-animate-zoom"
+                        style="animation-iteration-count: infinite; animation-delay: 2s; animation-duration: 10s; animation-fill-mode: backwards;">
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            HTML 5</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            CSS 3</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            JavaScript</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            Bootstrap</li>
+                        <li class="w3-wide w3-ul w3-padding-small">
+                            RWD</li>
+                    </ul>
                 </div>
             </div>
+            <script>
+                w3.slideshow(".skills", 12200);
+            </script>
         </div><!-- End About Section -->
         <!-- Portfolio -->
         <div style="width: 80%; margin-left: auto; margin-right: auto;">
