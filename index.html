@@ -27,7 +27,7 @@
             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"
             href="mailto:tlkjorsh@icloud.com?subject=Get In Touch&body=Please enter your message">Hire
             Me</a>
-            <!-- Navbar on Small & Medium screens (Hidden on large screens) -->
+        <!-- Navbar on Small & Medium screens (Hidden on large screens) -->
         <div class="w3-bar w3-hide-large">
             <a class="w3-btn w3-bar-item" href="https://twitter.com/themanOsho" style="margin-top: 7%;"><i
                     class="fa fa-twitter w3-text-white w3-xlarge w3-margin-right"></i></a>
@@ -83,17 +83,32 @@
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <b>Joshua Osho</b>
             </h2>
-            <p class="w3-padding w3-text-black w3-card-4 w3-round-xxlarge">
-                Motivated student of Computer Science seeking hands-on experience in frontend
-                web development. A friendly and outgoing personality with a strong desire
-                to succeed. Front-end web developer/designer who excels at guest service
-                coordination. Exceptionally well-organized and detail-oriented.
-            </p>
+            <div class="w3-container  w3-text-black w3-card-4 w3-round-xlarge">
+                <p>
+                    Motivated student of Computer Science seeking hands-on experience in frontend
+                    web development. A friendly and outgoing personality with a strong desire
+                    to succeed. Front-end web developer/designer who excels at guest service
+                    coordination. Exceptionally well-organized and detail-oriented.
+                </p>
+                <p id="aboutMore" style="display: none;">
+                    I'm well-versed in front-end web development technologies such as HTML5,
+                    CSS3, Bootstrap (Equivalent), Responsive web design and JavaScript. And
+                    I used to be an Intern at Surfweb Digital Solutions. In addition, I'm
+                    open to Freelance, Contract, Part-Time or Full-Time and Intern opportunities.
+                </p>
+            </div><br>
+            <script>
+                function myFunction() {
+                    document.getElementById("aboutMore").style.display = "block";
+                }
+            </script>
+            <button onclick="w3.toggleShow('#aboutMore')"
+                class="w3-btn w3-right w3-text-black w3-card-4 w3-round-xlarge">Read More/Less</button><br><br
+                class="w3-hide-large">
             <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <b>Technical Skills</b>
             </h2>
-            
-            <div class="w3-row">
+            <div class="w3-container w3-row  w3-text-black w3-border">
                 <div class="w3-mobile w3-third">
                     <ul>
                         <li class="w3-wide w3-ul w3-padding-small"
