@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/4/w3.css">
     <script src="js/w3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         #navSmall {
             position: sticky;
@@ -73,7 +74,7 @@
                 </div>
             </div>
             <div class="w3-half w3-mobile" style="width: 40%; padding-top: 2%;">
-                <img src="images/joshua.png" class="w3-image w3-circle" width="50%">
+                <img src="images/joshua.png" class="w3-image w3-circle" width="50%" data-aos="flip-up">
                 <p class="w3-hide-large w3-hide-medium w3-animate-opacity"
                     style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 4s;">Creative
                     Frontend Web Developer/Designer</p>
@@ -91,15 +92,13 @@
             <div class="w3-container w3-text-black">
                 <p class="w3-padding-small">
                     Motivated student of Computer Science seeking hands-on experience in frontend
-                    web development. A friendly and outgoing personality with a strong desire
-                    to succeed. Front-end web developer/designer who excels at guest service
+                    web development. Front-end web developer/designer who excels at guest service
                     coordination. Exceptionally well-organized and detail-oriented.
                 </p>
                 <p class="w3-padding-small" id="aboutMore" style="display: none;">
                     I'm well-versed in front-end web development technologies such as HTML5,
-                    CSS3, Bootstrap (Equivalent), Responsive web design and JavaScript. And
-                    I used to be an Intern at Surfweb Digital Solutions. In addition, I'm
-                    open to Freelance, Contract, Part-Time or Full-Time and Intern opportunities.
+                    CSS3, Bootstrap (Equivalent), Responsive web design and JavaScript. I'm
+                    open to Freelance, Contract, Part-Time opportunities.
                 </p>
             </div><br>
             <script>
@@ -110,19 +109,25 @@
             <button onclick="w3.toggleShow('#aboutMore')"
                 class="w3-btn w3-right w3-text-black w3-card-4 w3-round-xlarge">Read More/Less</button><br><br
                 class="w3-hide-large">
-            <h2 class="w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                <b><span class="w3-hide-small w3-hide-medium">Technical</span> Skills</b>
-            </h2>
-            <hr style="width: 20%; height: 1px;" color="black">
             <!-- Tech Stack -->
             <div class="w3-row-padding w3-container w3-mobile"
                 style="max-width: 90%; height: fit-content; margin: auto;">
-                <h2 class="w3-text-black w3-center w3-animate-opacity" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 25ms;">
+                <h2 data-aos="flip-up" data-aos-duration="4ms" class="w3-text-black w3-center">
                     <b>Tech Stack</b>
                 </h2>
+                <!-- Script to activate animations on Scroll, data-aos(animation on scroll)="value" -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                    <script>
+                        AOS.init({
+                            duration: 3000,
+                            once: true
+                        });
+                    </script>
+                    <!-- End -->
                 <hr style="width: 50%; height: 1px; margin: auto;" color="black"> <br>
-                <div class="w3-half w3-mobile w3-text-black w3-right-align" style="height: 150px;">
-                    <span class="w3-hide-small w3-animate-right" style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 25ms;">
+                <div class="w3-half w3-mobile w3-text-black w3-right-align" style="height: 150px;" data-aos="fade-left">
+                    <!-- First Span is to hide the section on Small Screens -->
+                    <span class="w3-hide-small">
                         <h4 class="w3-text-black"
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>Featured</b> <i class="fa fa-star"></i>
@@ -131,21 +136,22 @@
                         <img src="images/css3.svg" class="w3-mobile w3-margin" style="max-width: 5%;">
                         <img src="images/square-js.svg" class="w3-mobile w3-margin" style="max-width: 5%;">
                     </span>
+                    <!-- Second Span is to hide the section on Medium & large Screens -->
                     <!-- Center elements on Small Screens -->
                     <span class="w3-center w3-hide-large w3-hide-medium">
                         <h4 class="w3-text-black"
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>Featured</b> <i class="fa fa-star"></i>
                         </h4>
-                        <div class="w3-center w3-animate-opacity"  style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 5s;">
+                        <div class="w3-center w3-animate-opacity">
                             <img src="images/html5.svg" class=" w3-margin" style="max-width: 5%;">
                             <img src="images/css3.svg" class=" w3-margin" style="max-width: 5%;">
                             <img src="images/square-js.svg" class=" w3-margin" style="max-width: 5%;">
                         </div>
                     </span>
                 </div>
-                <div class="w3-half w3-mobile w3-text-black" style="height: 150px;">
-                    <span class="w3-hide-small w3-animate-left" style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 25ms;">
+                <div class="w3-half w3-mobile w3-text-black" style="height: 150px;" data-aos="fade-right">
+                    <span class="w3-hide-small">
                         <h4 class="w3-text-black"
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>Framework</b> <i class="fa fa-star"></i>
@@ -157,13 +163,13 @@
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>Framework</b> <i class="fa fa-star"></i>
                         </h4>
-                        <div class="w3-center w3-animate-opacity"  style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 5s;">
+                        <div class="w3-center">
                             <img src="images/bootstrap.svg" class="w3-margin" style="max-width: 5%;">
                         </div>
                     </span>
                 </div>
-                <div class="w3-half w3-mobile w3-text-black w3-right-align" style="height: 150px;">
-                    <span class="w3-hide-small w3-animate-right" style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 25ms;">
+                <div class="w3-half w3-mobile w3-text-black w3-right-align" style="height: 150px;" data-aos="fade-left">
+                    <span class="w3-hide-small">
                         <h4 class="w3-text-black"
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>CMS</b> <i class="fa fa-star"></i>
@@ -175,13 +181,13 @@
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>CMS</b> <i class="fa fa-star"></i>
                         </h4>
-                        <div class="w3-center w3-animate-opacity"  style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 5s;">
+                        <div class="w3-center">
                             <img src="images/wordpress.svg" class="w3-margin" style="max-width: 5%;">
                         </div>
                     </span>
                 </div>
-                <div class="w3-half w3-mobile w3-text-black" style="height: 150px;">
-                    <span class="w3-hide-small w3-animate-left" style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 25ms;">
+                <div class="w3-half w3-mobile w3-text-black" style="height: 150px;" data-aos="fade-right">
+                    <span class="w3-hide-small">
                         <h4 class="w3-text-black"
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>JavaScript UI</b> <i class="fa fa-star"></i>
@@ -193,7 +199,7 @@
                             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 2%;">
                             <b>JavaScript UI</b> <i class="fa fa-star"></i>
                         </h4>
-                        <div class="w3-center w3-animate-opacity"  style="animation-iteration-count: infinite; animation-duration: 5s; animation-delay: 5s;">
+                        <div class="w3-center">
                             <img src="images/react.svg" class="w3-margin" style="max-width: 5%;">
                         </div>
                     </span>
@@ -253,6 +259,8 @@
         <div class="w3-container w3-black w3-text-white w3-padding-large w3-row" id="contact"
             style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100%; margin-left: auto; margin-right: auto;">
             <div class="w3-bar  w3-xlarge">
+                <a class="w3-btn w3-bar-item" href="https://api.whatsapp.com/send?phone=2349049788099"><i
+                    class="fa fa-whatsapp w3-text-white w3-xlarge w3-margin-right"></i></a><span class="w3-bar-item">|</span>
                 <a class="w3-btn w3-bar-item" href="tel: +234 904-978-8099"><i
                         class="fa fa-phone w3-text-white w3-xlarge w3-margin-right"></i>+234 904-978-8099</a>
                 <a class="w3-btn w3-bar-item"
@@ -266,12 +274,8 @@
                         class="fa fa-github w3-text-white w3-xlarge w3-margin-right"></i></a>
                 <a class="w3-btn" href="https://twitter.com/themanOsho"><i
                         class="fa fa-twitter w3-text-white w3-xlarge w3-margin-right"></i></a>
-                <a class="w3-btn" href="https://www.facebook.com/themanosho"><i
-                        class="fa fa-facebook w3-text-white w3-xlarge w3-margin-right"></i></a>
                 <a class="w3-btn" href="https://www.linkedin.com/in/themanosho"><i
                         class="fa fa-linkedin w3-text-white w3-xlarge w3-margin-right"></i></a>
-                <a class="w3-btn" href="https://api.whatsapp.com/send?phone=2349049788099"><i
-                        class="fa fa-whatsapp w3-text-white w3-xlarge w3-margin-right"></i></a>
             </div>
             <hr style="width:100%; height: 1px;" class="w3-white">
         </div><!-- End Contact Section -->
